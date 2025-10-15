@@ -1,0 +1,130 @@
+/*
+ * Names: Kaleb Lowdermilk, Julianna Marshall, Brittany Stallo
+ * File Name: styles.css
+*/
+
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/*Global Styles*/
+body {
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    color: black;
+    padding: 0 5rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/*Style rules for header*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3.5rem 0;
+}
+
+.header__logo {
+    font-size: 20px;
+}
+
+/*Style rules for header navigation area*/
+.nav__list {
+    list-style-type: none;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: black;
+}
+
+.nav__link:hover {
+    color: #6b6b6b;
+}
+
+/*Style rules for Buttons*/
+.btn {
+    /*text-decoration: none;*/
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn__quote {
+    background-color: #579F55;
+    color: white;
+    width: 11.25rem;
+    height: 3.25rem;
+    font-size: 16px;
+    border-radius: 0.25rem;
+}
+
+.btn__quote:hover {
+    background-color: #4a8b49;
+}
+
+/*Style rules for main content*/
+
+
+/*Style rules for body and images*/
+
+/*Style rules for footer*/
+hr {
+    background-color: #E6E6E6;
+    height: 2px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3.25rem;
+    margin-right: 6.25rem;
+}
+
+.footer__logo {
+    font-size: 24px;
+    margin-bottom: 1rem;
+}
+
+.footer__phone,
+.footer__email {
+    font-size: 16px;
+}
+
+.footer__links {
+    display: flex;
+    gap: 3.75rem;
+}
+
+.footer__section_name{
+    font-size: 16px;
+    margin-bottom: 1.5rem;
+}
+
+.footer__sublink {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.footer__nav_link{
+    color: #454545;
+}
+
+.footer__nav_link:hover{
+    color: #797979;
+}
