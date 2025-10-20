@@ -63,7 +63,6 @@ header {
     display: none;
     flex-direction: column;
     background-color: white;
-    position: absolute;
     top: 100%;
     right: 0;
     width: 220px;
@@ -175,6 +174,7 @@ footer {
     margin-top: 1rem;
     font-size: 9px;
     color: #6b6b6b;
+    max-width: 25rem;
 }
 
 /*Style rules for mobile & tablet view*/
