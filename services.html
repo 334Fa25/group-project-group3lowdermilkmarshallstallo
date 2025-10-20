@@ -14,7 +14,8 @@
 <body>
     <header>
         <h1 class="header__logo">BrightSprout Landscaping</h1>
-        <nav>
+        <nav class="topnav">
+            <!--desktop navigation-->
             <ul class="nav__list">
                 <li><a href="services.html" class="nav__link">Services</a></li>
                 <li><a href="gallery.html" class="nav__link">Gallery</a></li>
@@ -22,58 +23,83 @@
                 <li><a href="blogs.html" class="nav__link">Blogs</a></li>
                 <li><a href="services.html" class=" btn btn__quote">Get A Free Quote</a></li>
             </ul>
+            
+            <!--mobile dropdown-->
+            <div id="myLinks">
+                <a href="services.html" class="nav__link">Services</a>
+                <a href="gallery.html" class="nav__link">Gallery</a>
+                <a href="about.html" class="nav__link">About</a>
+                <a href="blogs.html" class="nav__link">Blogs</a>
+                <a href="services.html" class=" btn btn__quote">Get A Free Quote</a>
+            </div>
+            
+            <!--hamburger icon-->
+            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                <i class="fa fa-bars"></i>
+            </a>
         </nav>
     </header>
 
 
     <!--Use the main area to add the main content to the webpage-->
     <main>
+        <p>This is the main area for the services page.</p>
     </main>
 
     <hr>
     <footer>
-        <div class="footer__info">
-            <h1 class="footer__logo">BrightSprout Landscaping</h1>
-            <p class="footer__phone">(555)123-LAND</p>
-            <p class="footer__email">info@brightsprout.com</p>
+        <div class="footer__info_links">
+            <div class="footer__info">
+                <h1 class="footer__logo">BrightSprout Landscaping</h1>
+                <p class="footer__phone">(555)123-LAND</p>
+                <p class="footer__email">info@brightsprout.com</p>
+                 <p class="footer__disclaimer">This site was created as part of the Web Development II course at Northwest Missouri State University<br>and was developed to learn and enhance the concepts within that course. It is not intended for public use.</p>
+            </div>
+
+            <div class="footer__links">
+                <div class="footer__column">
+                    <h3 class="footer__section_name">Services</h3>
+                    <ul class="footer__sublink">
+                        <li><a href="services.html" class="footer__nav_link">Service Packages</a></li>
+                        <li><a href="services.html" class="footer__nav_link">Get A Quote</a></li>
+                        <li><a href="services.html" class="footer__nav_link">Discounts & Bundles</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__section_name">Gallery</h3>
+                    <ul class="footer__sublink">
+                        <li><a href="gallery.html" class="footer__nav_link">Photo Gallery</a></li>
+                        <li><a href="gallery.html" class="footer__nav_link">Customer Reviews</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__section_name">About Us</h3>
+                    <ul class="footer__sublink">
+                        <li><a href="about.html" class="footer__nav_link">Company Story</a></li>
+                        <li><a href="about.html" class="footer__nav_link">Our Mission</a></li>
+                        <li><a href="about.html" class="footer__nav_link">Meet Our Team</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer__column">
+                    <h3 class="footer__section_name">Blogs</h3>
+                    <ul class="footer__sublink">
+                        <li><a href="blogs.html" class="footer__nav_link">Articles</a></li>
+                        <li><a href="blogs.html" class="footer__nav_link">Tips</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
-        
-        <div class="footer__links">
-            <div class="footer__column">
-                <h3 class="footer__section_name">Services</h3>
-                <ul class="footer__sublink">
-                    <li><a href="services.html" class="footer__nav_link">Service Packages</a></li>
-                    <li><a href="services.html" class="footer__nav_link">Get A Quote</a></li>
-                    <li><a href="services.html" class="footer__nav_link">Discounts & Bundles</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__column">
-                <h3 class="footer__section_name">Gallery</h3>
-                <ul class="footer__sublink">
-                    <li><a href="gallery.html" class="footer__nav_link">Photo Gallery</a></li>
-                    <li><a href="gallery.html" class="footer__nav_link">Customer Reviews</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__column">
-                <h3 class="footer__section_name">About Us</h3>
-                <ul class="footer__sublink">
-                    <li><a href="about.html" class="footer__nav_link">Company Story</a></li>
-                    <li><a href="about.html" class="footer__nav_link">Our Mission</a></li>
-                    <li><a href="about.html" class="footer__nav_link">Meet Our Team</a></li>
-                </ul>
-            </div>
-
-            <div class="footer__column">
-                <h3 class="footer__section_name">Blogs</h3>
-                <ul class="footer__sublink">
-                    <li><a href="blog.html" class="footer__nav_link">Articles</a></li>
-                    <li><a href="blog.html" class="footer__nav_link">Tips</a></li>
-                </ul>
-            </div>
-        </div>
+       
     </footer>
+    <script>
+        function toggleMenu() {
+            var menu = document.getElementById("myLinks");
+            menu.classList.toggle("show");
+        }
+    </script>
 </body>
 
 </html>
