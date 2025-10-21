@@ -112,7 +112,17 @@ header {
     background-color: #4a8b49;
 }
 
-/*Style rules for main content*/
+/*Style rules for about.html*/
+
+/*Style rules for blogs.html*/
+
+/*Style rules for gallery.html*/
+
+/*Style rules for index.html*/
+
+/*Style rules for services.html*/
+
+/*Style rules for template.html*/
 
 /*Style rules for body and images*/
 
@@ -180,76 +190,76 @@ footer {
 
 /*Style rules for mobile & tablet view*/
 @media (max-width: 768px) {
-     body {
-    padding: 1rem;
-  }
+    body {
+        padding: 1rem;
+    }
 
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-  }
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 
-  .nav__list {
-    display: none;
-  }
+    .nav__list {
+        display: none;
+    }
 
-  .topnav {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-  }
+    .topnav {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
 
-  .topnav .icon {
-    display: block;
-    font-size: 28px;
-    cursor: pointer;
-    color: black;
-    padding: 0.5rem;
-    z-index: 1001; 
-  }
+    .topnav .icon {
+        display: block;
+        font-size: 28px;
+        cursor: pointer;
+        color: black;
+        padding: 0.5rem;
+        z-index: 1001;
+    }
 
-  #myLinks {
-    display: none;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: white;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100vh; 
-    z-index: 1000;
-    text-align: center;
-    gap: 2rem;
-    font-size: 1.25rem;
-  }
+    #myLinks {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: white;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        z-index: 1000;
+        text-align: center;
+        gap: 2rem;
+        font-size: 1.25rem;
+    }
 
-  #myLinks.show {
-    display: flex;
-  }
+    #myLinks.show {
+        display: flex;
+    }
 
-  #myLinks a {
-    padding: 1rem;
-  }
+    #myLinks a {
+        padding: 1rem;
+    }
 
-  #myLinks a:hover {
-    color: #579F55;
-  }
+    #myLinks a:hover {
+        color: #579F55;
+    }
 
-  .footer__info_links {
-    flex-direction: column;
-    gap: 2rem;
-  }
+    .footer__info_links {
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-  .footer__links {
-    flex-direction: column;
-    gap: 2rem;
-  }
+    .footer__links {
+        flex-direction: column;
+        gap: 2rem;
+    }
 
-  .footer__disclaimer {
-    text-align: justify;
-  }
+    .footer__disclaimer {
+        text-align: justify;
+    }
 }
