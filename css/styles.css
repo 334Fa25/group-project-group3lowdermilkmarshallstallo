@@ -95,36 +95,18 @@ header {
     border: none;
     cursor: pointer;
     transition: background-color 0.2s ease;
-}
-
-.btn__quote {
     background-color: #579F55;
     color: white;
-    width: 11.25rem;
-    height: 3.25rem;
+    padding: 1rem;
     font-size: 16px;
     border-radius: 0.25rem;
     align-content: center;
     text-align: center;
 }
 
-.btn__quote:hover {
+.btn:hover {
     background-color: #4a8b49;
 }
-
-/*Style rules for about.html*/
-
-/*Style rules for blogs.html*/
-
-/*Style rules for gallery.html*/
-
-/*Style rules for index.html*/
-
-/*Style rules for services.html*/
-
-/*Style rules for template.html*/
-
-/*Style rules for body and images*/
 
 /*Style rules for footer*/
 hr {
