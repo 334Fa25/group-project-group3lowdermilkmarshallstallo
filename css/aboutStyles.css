@@ -2,3 +2,11 @@
  * Names: Kaleb Lowdermilk, Julianna Marshall, Brittany Stallo
  * File Name: aboutStyles.css
 */
+.about__meet_the_team_title {
+ color: #0841C9;
+ opacity: 50%; 
+}
+.about__meet_the_team_picture {
+ width: 272px;
+ height: auto;
+}
