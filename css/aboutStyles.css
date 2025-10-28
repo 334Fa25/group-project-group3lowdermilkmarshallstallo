@@ -7,6 +7,6 @@
  opacity: 50%; 
 }
 .about__meet_the_team_picture {
- width: 272px;
- height: auto;
+ width: 50%;
+ margin: auto;
 }
