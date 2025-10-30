@@ -2,3 +2,284 @@
  * Names: Kaleb Lowdermilk, Julianna Marshall, Brittany Stallo
  * File Name: servicesStyles.css
 */
+
+/*  Services Page Styles  */
+
+/* Overall page layout */
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+/*  SERVICES TITLE SECTION */
+.services__title {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.services__title h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.services__title h3 {
+    font-weight: 400;
+    color: #454545;
+    margin-bottom: 2rem;
+}
+
+.services__title .button button {
+    background-color: #579F55;
+    color: white;
+    font-size: 1rem;
+    padding: 1rem 2rem;
+    border-radius: 0.25rem;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.services__title .button button:hover {
+    background-color: #4a8b49;
+    transform: translateY(-3px);
+}
+
+/*  IMAGE SECTIONS  */
+.services__image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services__image img {
+    width: 100%;
+    max-width: 1000px;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/*  SERVICE LINKS SECTION  */
+.services__links {
+    text-align: center;
+}
+
+.services__links h1 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.services__links article {
+    background-color: #f8f8f8;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services__links article:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.services__links h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.services__links h3 {
+    font-weight: 400;
+    color: #555;
+    margin-bottom: 1.5rem;
+}
+
+.services__links button {
+    background-color: #579F55;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.75rem;
+    font-size: 1rem;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.services__links button:hover {
+    background-color: #4a8b49;
+    transform: translateY(-3px);
+}
+
+/*  SERVICE PRICING SECTION  */
+.services__prices {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 3rem;
+    background-color: #f8f8f8;
+}
+
+/* SECTION TITLES */
+.services__prices h1 {
+    font-size: 2rem;
+    color: #2f2f2f;
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #579F55;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* PACKAGE CARDS */
+.package {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 2rem;
+    margin: 1rem auto;
+    max-width: 800px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* PACKAGE HEADERS */
+.package h3:first-of-type {
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: #2f2f2f;
+    margin-bottom: 0.75rem;
+}
+
+/* PACKAGE DESCRIPTIONS */
+.package p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+/* PACKAGE PRICE */
+.package h3:last-of-type {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #579F55;
+    margin-top: 1rem;
+}
+
+/* ADD SOME VISUAL SEPARATION BETWEEN SERVICE GROUPS */
+.services__prices h1:not(:first-of-type) {
+    margin-top: 4rem;
+}
+
+/*  DISCOUNTS & BUNDLES SECTION */
+
+.services__discounts,
+.services__estimate {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    padding: 2.5rem 3rem;
+    max-width: 800px;
+    margin: 2rem auto;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.services__discounts:hover,
+.services__estimate:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* SECTION TITLES */
+.services__discounts h1,
+.services__estimate h1 {
+    font-size: 2rem;
+    color: #2f2f2f;
+    margin-bottom: 1.5rem;
+    border-bottom: 3px solid #579F55;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+}
+
+/* SUBHEADINGS & INFO TEXT */
+.services__discounts h2,
+.services__discounts h3,
+.services__estimate h3 {
+    color: #555;
+    font-weight: 400;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+}
+
+.services__discounts h2 {
+    font-size: 1.5rem;
+    margin-top: 1.5rem;
+    color: #2f2f2f;
+}
+
+/* BUTTONS */
+.services__estimate button {
+    background-color: #579F55;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.services__estimate button:hover {
+    background-color: #4b8c48;
+    transform: translateY(-3px);
+}
+
+/* RESPONSIVE DESIGN */
+@media (max-width: 768px) {
+    .services__discounts,
+    .services__estimate {
+        padding: 2rem;
+        margin: 1.5rem auto;
+    }
+
+    .services__discounts h1,
+    .services__estimate h1 {
+        font-size: 1.75rem;
+    }
+
+    .services__discounts h2,
+    .services__discounts h3,
+    .services__estimate h3 {
+        font-size: 1rem;
+    }
+
+    .services__estimate button {
+        padding: 0.6rem 1.25rem;
+        font-size: 0.95rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .services__prices {
+        padding: 2rem;
+        gap: 2rem;
+    }
+
+    .package {
+        padding: 1.5rem;
+        max-width: 100%;
+    }
+
+    .services__prices h1 {
+        font-size: 1.75rem;
+    }
+
+    .package h3:first-of-type {
+        font-size: 1.25rem;
+    }
+}
