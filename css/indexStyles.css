@@ -3,10 +3,287 @@
  * File Name: indexStyles.css
 */
 
-h2{
-    font-size: 64px;
+/*Whole Page Stylings*/
+img {
+    width: 100%;
 }
 
-p{
-    font-size: 24px;
+/*Home Hero Stylings*/
+.index__hero {
+    background-image: url("../images/house3After.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    position: relative;
+    align-content: center;
+
+}
+
+.index__hero_cover {
+    background-color: rgb(255, 255, 255, 0.9);
+    width: 80%;
+    justify-self: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.index__hero_header {
+    margin-bottom: 0.75rem;
+}
+
+.index__hero_info {
+    color: rgb(0, 0, 0, 0.75);
+    margin-bottom: 1.625rem;
+}
+
+/*Home Hero Stylings for Desktop*/
+@media (min-width: 1302px) {
+    .index__hero {
+        height: 50rem;
+    }
+
+    .index__hero_cover {
+        width: 90%;
+        margin-bottom: 30rem;
+        align-items: center;
+    }
+
+    .index__hero_header {
+        font-size: 64px;
+    }
+
+    .index__hero_info {
+        font-size: 24px;
+    }
+}
+
+/*About Section Stylings*/
+.index__about {
+    margin-top: 4.938rem;
+    text-align: center;
+}
+
+.index__about_header {
+    font-size: 32px;
+}
+
+.index__about_quote {
+    margin-top: 1.5rem;
+    font-size: 20px;
+}
+
+.index__about_info {
+    margin-bottom: 1.75rem;
+    margin-top: 1.813rem;
+    color: #828282;
+}
+
+/*About Stylings for Desktop*/
+@media (min-width: 1302px) {
+    .index__about_header {
+        font-size: 64px;
+    }
+
+    .index__about_quote {
+        font-size: 32px;
+    }
+
+    .index__about_info {
+        font-size: 24px;
+        margin-inline: 16.875rem;
+    }
+}
+
+/*What We Offer Stylings*/
+.index__offer {
+    margin-top: 4.938rem;
+    margin-bottom: 4.813rem;
+    text-align: center;
+}
+
+.index__offer_header {
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.index__offer_card_info {
+    color: #828282;
+    margin-top: 0.25rem;
+}
+
+.index__offer_carousel {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    gap: 1rem;
+    padding-bottom: 0.5rem;
+}
+
+.index__offer_card {
+    flex: 0 0 auto;
+    width: 250px;
+    background-color: #E0C58F1A;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    padding: 1rem;
+    scroll-snap-align: start;
+}
+
+.index__offer_card_image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.index__offer_card_header {
+    font-weight: 600;
+    margin-top: 0.75rem;
+}
+
+.index__offer_card_info {
+    color: #828282;
+    margin-top: 0.5rem;
+}
+
+.offer_btn {
+    margin-top: 1rem;
+}
+
+/*What We Offer Stylings for Desktop*/
+@media (min-width: 1302px) {
+    .index__offer {
+        width: 100%;
+        text-align: left;
+    }
+
+    .index__offer_header {
+        font-size: 48px;
+        margin-bottom: 2rem;
+        justify-self: start;
+    }
+
+    .index__offer_carousel {
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1.5rem;
+        flex-wrap: nowrap;
+        overflow: visible;
+    }
+
+    .index__offer_card {
+        flex: 1;
+        background-color: #fff;
+        border-radius: 12px;
+        overflow: hidden;
+        text-align: left;
+        box-shadow: none;
+    }
+
+    .index__offer_card_image {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .index__offer_card_header {
+        font-size: 24px;
+    }
+
+    .index__offer_card_info {
+        color: #828282;
+        font-size: 24px;
+        line-height: 1.4;
+    }
+
+    .offer_btn {
+        display: none;
+    }
+}
+
+/*Why Choose Us Stylings*/
+.index__choose {
+    display: none;
+}
+
+@media (min-width: 1302px) {
+    .index__choose {
+        display: flex;
+        gap: 8.813rem;
+    }
+
+    .index__choose_header {
+        font-size: 48px;
+        margin-bottom: 3rem;
+    }
+
+    .index__choose_reasons {
+        font-size: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+    }
+
+    .index__choose_reasons_info {
+        color: #828282;
+    }
+
+    .index__choose_image {
+        width: 80%;
+        border-radius: 10px;
+    }
+
+    .index__choose_btn {
+        margin-top: 5.188rem;
+    }
+}
+
+/*Reviews Stylings*/
+.index__reviews {
+    display: none;
+}
+
+@media (min-width: 1302px) {
+    .index__reviews {
+        display: block;
+        margin-top: 13.5rem;
+        text-align: center;
+    }
+
+    .index__reviews_header {
+        font-size: 48px;
+        margin-bottom: 3rem;
+        text-align: left;
+    }
+
+    .index__reviews_group {
+        display: flex;
+        gap: 2rem;
+        text-align: left;
+    }
+
+    .index__reviews_individual {
+        padding: 2rem;
+        border: 1px solid #E6E6E6;
+        border-radius: 12px;
+    }
+
+    .index__reviews_group_header {
+        font-size: 24px;
+        margin-bottom: 3rem;
+    }
+
+    .index__reviews_group_date {
+        color: #828282;
+    }
+
+    .reviews__btn {
+        margin-block: 4.813rem;
+    }
 }
