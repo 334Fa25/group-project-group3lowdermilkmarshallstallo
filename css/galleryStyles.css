@@ -2,3 +2,11 @@
  * Names: Kaleb Lowdermilk, Julianna Marshall, Brittany Stallo
  * File Name: galleryStyles.css
 */
+
+.gallery__photos_top_row {
+  width: 180px;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
