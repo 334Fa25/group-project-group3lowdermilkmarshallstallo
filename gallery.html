@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Template</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/galleryStyles.css">
     <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -15,7 +16,7 @@
 
 <body>
     <header>
-        <h1 class="header__logo">BrightSprout Landscaping</h1>
+        <a href="index.html" class="header__logo">BrightSprout Landscaping</a>
         <nav class="topnav">
             <!--desktop navigation-->
             <ul class="nav__list">
@@ -45,30 +46,28 @@
 
     <!--Use the main area to add the main content to the webpage-->
     <main>
-        <div class="gallery">
-            <h2 class="gallery__header">Gallery</h2>
+        <h2 class="gallery__header">Gallery</h2>
+        <div class="gallery__photos_row">
+            <img src="images/redDoorHouseAfter.png" alt="First Photo" class="gallery__photos_row_image">
+            <img src="images/house2.jpg" alt="Second Photo" class="gallery__photos_row_image">
+            <img src="images/house3After.png" alt="Third Photo" class="gallery__photos_row_image">
         </div>
-        <div class="gallery__photos_top_row">
-            <img src="images/redDoorHouseAfter.png" alt="First Photo" class="gallery__photos_top_row">
-            <img src="images/house2.jpg" alt="Second Photo" class="gallery__photos_top_row">
-            <img src="images/house3After.png" alt="Third Photo" class="gallery__photos_top_row">
+        <div class="gallery__review">
+            <h3 class="gallery__review_quote">Our yard looks amazing now!</h3>
+            <p class="gallery_review_name_date">Jane Doe, October 2025</p>
         </div>
-        <div class="gallery__review_first">
-            <h3 class="gallery__review_first">Our yard looks amazing now!</h3>
-            <p>Jane Doe, October 2025</p>
+        <div class="gallery__photos_row">
+            <img src="images/patio.jpg" alt="Fourth Photo" class="gallery__photos_row_image">
+            <img src="images/house1.jpg" alt="Fifth Photo" class="gallery__photos_row_image">
+            <img src="images/BeforeAndAfter.jpg" alt="Sixth Photo" class="gallery__photos_row_image">
         </div>
-        <div class="gallery__photos_bottom_row">
-            <img src="images/patio.jpg" alt="Fourth Photo" class="gallery__photos_bottom_row">
-            <img src="images/house1.jpg" alt="Fifth Photo" class="gallery__photos_bottom_row">
-            <img src="images/BeforeAndAfter.jpg" alt="Sixth Photo" class="gallery__photos_bottom row">
-        </div>
-        <div class="gallery__review_second">
-            <h3 class="gallery__review_second">Best decision I've ever made!</h3>
-            <p>Jimmy John, October 2025</p>
+        <div class="gallery__review">
+            <h3 class="gallery__review_quote">Best decision I've ever made!</h3>
+            <p class="gallery_review_name_date">Jimmy John, October 2025</p>
         </div>
         <div class="gallery__services">
             <h4 class="gallery__services_header">Check Out Our Services</h4>
-            <a href="services.html" class=" btn btn__quote">Services Page</a>
+            <a href="services.html" class="btn">Services Page</a>
         </div>
     </main>
 
@@ -76,7 +75,7 @@
     <footer>
         <div class="footer__info_links">
             <div class="footer__info">
-                <h1 class="footer__logo">BrightSprout Landscaping</h1>
+                <a href="index.html" class="footer__logo">BrightSprout Landscaping</a>
                 <p class="footer__phone">(555)123-LAND</p>
                 <p class="footer__email">info@brightsprout.com</p>
                 <p class="footer__disclaimer">This site was created as part of the Web Development II course at Northwest Missouri State University and was developed to learn and enhance the concepts within that course. It is not intended for public use.</p>

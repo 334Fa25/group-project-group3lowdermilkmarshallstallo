@@ -3,10 +3,26 @@
  * File Name: galleryStyles.css
 */
 
-.gallery__photos_top_row {
-  width: 180px;
-  height: auto;
-  border-radius: 8px;
-  object-fit: cover;
-}
+@media (min-width: 1024px) {
+    .gallery__header {
+        font-size: 48px;
+        margin-bottom: 4.438rem;
+    }
 
+    .gallery__photos_row {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        gap: 1.125rem;
+        justify-content: center;
+    }
+
+    .gallery__photos_row_image {
+        width: 26.188rem;
+    }
+
+    .gallery__review_first {
+        font-size: 40px;
+        margin-top: 4rem;
+    }
+}

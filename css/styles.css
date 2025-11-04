@@ -34,6 +34,7 @@ header {
 
 .header__logo {
     font-size: 20px;
+    font-weight: bold;
 }
 
 /*Style rules for header navigation area*/
@@ -118,7 +119,7 @@ hr {
 footer {
     display: flex;
     flex-direction: column;
-    margin-top: 3.25rem;
+    margin-block: 3.25rem;
     margin-right: 6.25rem;
 }
 

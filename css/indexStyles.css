@@ -3,11 +3,6 @@
  * File Name: indexStyles.css
 */
 
-/*Whole Page Stylings*/
-img {
-    width: 100%;
-}
-
 /*Home Hero Stylings*/
 .index__hero {
     background-image: url("../images/house3After.png");
@@ -18,7 +13,6 @@ img {
     height: 25rem;
     position: relative;
     align-content: center;
-
 }
 
 .index__hero_cover {
@@ -51,11 +45,11 @@ img {
     }
 
     .index__hero_header {
-        font-size: 64px;
+        font-size: 4rem;
     }
 
     .index__hero_info {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 }
 
@@ -66,12 +60,12 @@ img {
 }
 
 .index__about_header {
-    font-size: 32px;
+    font-size: 2rem;
 }
 
 .index__about_quote {
     margin-top: 1.5rem;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .index__about_info {
@@ -83,15 +77,15 @@ img {
 /*About Stylings for Desktop*/
 @media (min-width: 1302px) {
     .index__about_header {
-        font-size: 64px;
+        font-size: 4rem;
     }
 
     .index__about_quote {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     .index__about_info {
-        font-size: 24px;
+        font-size: 1.5rem;
         margin-inline: 16.875rem;
     }
 }
@@ -104,7 +98,7 @@ img {
 }
 
 .index__offer_header {
-    font-size: 32px;
+    font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -125,10 +119,10 @@ img {
 
 .index__offer_card {
     flex: 0 0 auto;
-    width: 250px;
+    width: 15.625rem;
     background-color: #E0C58F1A;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.624rem;
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 1rem;
     scroll-snap-align: start;
@@ -136,13 +130,13 @@ img {
 
 .index__offer_card_image {
     width: 100%;
-    height: 150px;
+    height: 9.375rem;
     object-fit: cover;
-    border-radius: 8px;
+    border-radius: 0.5rem;
 }
 
 .index__offer_card_header {
-    font-weight: 600;
+    font-weight: bold;
     margin-top: 0.75rem;
 }
 
@@ -163,7 +157,7 @@ img {
     }
 
     .index__offer_header {
-        font-size: 48px;
+        font-size: 3rem;
         margin-bottom: 2rem;
         justify-self: start;
     }
@@ -180,7 +174,7 @@ img {
     .index__offer_card {
         flex: 1;
         background-color: #fff;
-        border-radius: 12px;
+        border-radius: 0.75rem;
         overflow: hidden;
         text-align: left;
         box-shadow: none;
@@ -188,17 +182,17 @@ img {
 
     .index__offer_card_image {
         width: 100%;
-        height: 200px;
+        height: 12.5rem;
         object-fit: cover;
     }
 
     .index__offer_card_header {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 
     .index__offer_card_info {
         color: #828282;
-        font-size: 24px;
+        font-size: 1.5rem;
         line-height: 1.4;
     }
 
@@ -219,12 +213,12 @@ img {
     }
 
     .index__choose_header {
-        font-size: 48px;
+        font-size: 3rem;
         margin-bottom: 3rem;
     }
 
     .index__choose_reasons {
-        font-size: 20px;
+        font-size: 1.25rem;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -236,7 +230,7 @@ img {
 
     .index__choose_image {
         width: 80%;
-        border-radius: 10px;
+        border-radius: 0.625rem;
     }
 
     .index__choose_btn {
@@ -257,7 +251,7 @@ img {
     }
 
     .index__reviews_header {
-        font-size: 48px;
+        font-size: 3rem;
         margin-bottom: 3rem;
         text-align: left;
     }
@@ -270,12 +264,12 @@ img {
 
     .index__reviews_individual {
         padding: 2rem;
-        border: 1px solid #E6E6E6;
-        border-radius: 12px;
+        border: 0.063rem solid #E6E6E6;
+        border-radius: 0.75rem;
     }
 
     .index__reviews_group_header {
-        font-size: 24px;
+        font-size: 1.5rem;
         margin-bottom: 3rem;
     }
 
