@@ -43,14 +43,6 @@
         margin-bottom: 30rem;
         align-items: center;
     }
-
-    .index__hero_header {
-        font-size: 4rem;
-    }
-
-    .index__hero_info {
-        font-size: 1.5rem;
-    }
 }
 
 /*About Section Stylings*/
@@ -59,13 +51,8 @@
     text-align: center;
 }
 
-.index__about_header {
-    font-size: 2rem;
-}
-
 .index__about_quote {
     margin-top: 1.5rem;
-    font-size: 1.25rem;
 }
 
 .index__about_info {
@@ -76,16 +63,7 @@
 
 /*About Stylings for Desktop*/
 @media (min-width: 1302px) {
-    .index__about_header {
-        font-size: 4rem;
-    }
-
-    .index__about_quote {
-        font-size: 2rem;
-    }
-
     .index__about_info {
-        font-size: 1.5rem;
         margin-inline: 16.875rem;
     }
 }
@@ -98,7 +76,6 @@
 }
 
 .index__offer_header {
-    font-size: 2rem;
     text-align: center;
     margin-bottom: 1rem;
 }
@@ -157,7 +134,6 @@
     }
 
     .index__offer_header {
-        font-size: 3rem;
         margin-bottom: 2rem;
         justify-self: start;
     }
@@ -186,13 +162,8 @@
         object-fit: cover;
     }
 
-    .index__offer_card_header {
-        font-size: 1.5rem;
-    }
-
     .index__offer_card_info {
         color: #828282;
-        font-size: 1.5rem;
         line-height: 1.4;
     }
 
@@ -213,12 +184,10 @@
     }
 
     .index__choose_header {
-        font-size: 3rem;
         margin-bottom: 3rem;
     }
 
     .index__choose_reasons {
-        font-size: 1.25rem;
         display: flex;
         flex-direction: column;
         gap: 3rem;
@@ -251,7 +220,6 @@
     }
 
     .index__reviews_header {
-        font-size: 3rem;
         margin-bottom: 3rem;
         text-align: left;
     }
@@ -269,7 +237,6 @@
     }
 
     .index__reviews_group_header {
-        font-size: 1.5rem;
         margin-bottom: 3rem;
     }
 

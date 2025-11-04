@@ -9,26 +9,13 @@
 }
 
 .about__header {
-    font-size: 2.4rem;
     text-align: right;
     margin-bottom: 1.875rem;
 }
 
 .about__paragraph {
-    font-size: 1.05rem;
     margin-bottom: 1.25rem;
     text-align: left;
-}
-
-/* About Background Style Rules for Desktop*/
-@media (min-width: 1024px) {
-    .about__header {
-        font-size: 4rem;
-    }
-
-    .about__paragraph {
-        font-size: 1.25rem;
-    }
 }
 
 /* Our Mission Style Rules*/
@@ -41,12 +28,10 @@
 }
 
 .about__our_mission_header {
-    font-size: 1.6rem;
     margin-bottom: 1rem;
 }
 
 .about__our_mission_paragraph {
-    font-size: 1.05rem;
     line-height: 1.8;
 }
 
@@ -56,14 +41,6 @@
         padding: 4.375rem 5.375rem;
         text-align: left;
     }
-
-    .about__our_mission_header {
-        font-size: 3rem;
-    }
-
-    .about__our_mission_paragraph {
-        font-size: 1.5rem;
-    }
 }
 
 /*Meet The Team Style Rules*/
@@ -71,7 +48,6 @@
     color: #0841C980;
     margin-top: 4px;
     margin-bottom: 16px;
-    font-size: 1.4rem;
 }
 
 .about__meet_the_team {
@@ -80,7 +56,6 @@
 }
 
 .about__meet_the_team_header {
-    font-size: 1.4rem;
     margin-bottom: 1.875rem;
 }
 
@@ -108,12 +83,7 @@
     text-align: center;
 }
 
-.about__meet_the_team_name {
-    font-size: 1.4rem;
-}
-
 .about__meet_the_team_description {
-    font-size: 1rem;
     line-height: 1.6;
 }
 
@@ -124,7 +94,6 @@
     }
     
     .about__meet_the_team_header {
-        font-size: 2rem;
         margin-bottom: 3.75rem;
     }
 
@@ -150,18 +119,16 @@
     }
 
     .about__meet_the_team_name {
-        font-size: 3rem;
         font-weight: bold;
     }
 
     .about__meet_the_team_title {
-        font-size: 2.25rem;
         margin: 0.25rem 0 0.75rem;
     }
 
     .about__meet_the_team_description {
-        font-size: 1.5rem;
         margin-top: 2.75rem;
+        max-width: 50rem;
     }
 
 }
@@ -177,7 +144,6 @@
 }
 
 .about__services_header {
-    font-size: 1.8rem;
     margin-bottom: 1rem;
 }
 
