@@ -23,21 +23,22 @@ a {
     text-decoration: none;
     color: black;
 }
+
 @media (min-width: 1024px) {
     h2 {
-        font-size: 48px;
+        font-size: 3rem;
     }
 
     h3 {
-        font-size: 32px;
+        font-size: 2rem;
     }
 
     h4 {
-        font-size: 28px;
+        font-size: 1.75rem;
     }
 
     p {
-        font-size: 24px;
+        font-size: 1.5rem;
     }
 }
 
@@ -50,7 +51,7 @@ header {
 }
 
 .header__logo {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-weight: bold;
 }
 
@@ -60,7 +61,7 @@ header {
     display: flex;
     gap: 3rem;
     align-items: center;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .nav__link {
@@ -85,9 +86,9 @@ header {
     background-color: white;
     top: 100%;
     right: 0;
-    width: 220px;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+    width: 13.75rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 0.125rem 0.625rem rgba(0, 0, 0, 0.15);
 }
 
 #myLinks a {
@@ -103,7 +104,7 @@ header {
 /* Hamburger icon */
 .topnav .icon {
     display: none;
-    font-size: 24px;
+    font-size: 1.5rem;
     cursor: pointer;
 }
 
@@ -118,7 +119,7 @@ header {
     background-color: #579f55;
     color: white;
     padding: 1rem;
-    font-size: 16px;
+    font-size: 1.25rem;
     border-radius: 0.25rem;
     align-content: center;
     text-align: center;
@@ -131,7 +132,7 @@ header {
 /*Style rules for footer*/
 hr {
     background-color: #e6e6e6;
-    height: 2px;
+    height: 0.125rem;
 }
 
 footer {
@@ -149,13 +150,13 @@ footer {
 }
 
 .footer__logo {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .footer__phone,
 .footer__email {
-    font-size: 16px;
+    font-size: 1.25rem;
 }
 
 .footer__links {
@@ -164,7 +165,7 @@ footer {
 }
 
 .footer__section_name {
-    font-size: 16px;
+    font-size: 1.25rem;
     margin-bottom: 1.5rem;
 }
 
@@ -185,7 +186,7 @@ footer {
 
 .footer__disclaimer {
     margin-top: 1rem;
-    font-size: 9px;
+    font-size: 0.625rem;
     color: #6b6b6b;
     max-width: 25rem;
 }
@@ -215,7 +216,7 @@ footer {
 
     .topnav .icon {
         display: block;
-        font-size: 28px;
+        font-size: 1.75rem;
         cursor: pointer;
         color: black;
         padding: 0.5rem;
