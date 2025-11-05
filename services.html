@@ -1,273 +1,314 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--Names: Kaleb Lowdermilk, Julianna Marshall, Brittany Stallo-->
 <!--File Name: services.html-->
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Our Services</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/servicesStyles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            integrity="sha512-..."
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Our Services</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/servicesStyles.css">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body>
+        <header>
+            <a href="index.html" class="header__logo">BrightSprout Landscaping</a>
+            <nav class="topnav">
+                <!--desktop navigation-->
+                <ul class="nav__list">
+                    <li><a href="services.html" class="nav__link">Services</a></li>
+                    <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="blogs.html" class="nav__link">Blogs</a></li>
+                    <li><a href="services.html" class="btn btn__quote">Get A Free Quote</a></li>
+                </ul>
 
-</head>
-
-<body>
-    <header>
-        <a href="index.html" class="header__logo">BrightSprout Landscaping</a>
-        <nav class="topnav">
-            <!--desktop navigation-->
-            <ul class="nav__list">
-                <li><a href="services.html" class="nav__link">Services</a></li>
-                <li><a href="gallery.html" class="nav__link">Gallery</a></li>
-                <li><a href="about.html" class="nav__link">About</a></li>
-                <li><a href="blogs.html" class="nav__link">Blogs</a></li>
-                <li><a href="services.html" class=" btn btn__quote">Get A Free Quote</a></li>
-            </ul>
-
-            <!--mobile dropdown-->
-            <div id="myLinks">
-                <a href="services.html" class="nav__link">Services</a>
-                <a href="gallery.html" class="nav__link">Gallery</a>
-                <a href="about.html" class="nav__link">About</a>
-                <a href="blogs.html" class="nav__link">Blogs</a>
-                <a href="services.html" class=" btn btn__quote">Get A Free Quote</a>
-            </div>
-
-            <!--hamburger icon-->
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-                <i class="fas fa-bars"></i>
-            </a>
-        </nav>
-    </header>
-
-
-    <!--Use the main area to add the main content to the webpage-->
-    <main>
-        <section class="services__title">
-            <h1>Services</h1>
-            <h3>All prices are estimates. Final pricing is based on yard size, material selection, and project complexity.</h3>
-            <div class="button">
-                <button>Get a Free Quote</button>
-            </div>
-        </section>
-
-        <section class="services__image">
-            <img src="patio.jpg" alt="Patio design example">
-        </section>
-
-        <section class="services__links">
-            <h1>Service Packages & Pricing</h1>
-
-            <article>
-                <h2>Garden Design Packages</h2>
-                <h3>Sprout Plan, Growth Plan, and Bloom Plan</h3>
-                <button>Learn More</button>
-            </article>
-
-            <article>
-                <h2>Lawn Installation & Maintenance</h2>
-                <h3>Sod Installation, Native Grass Seeding, and Monthly Maintenance</h3>
-                <button>Learn More</button>
-            </article>
-
-            <article>
-                <h2>Eco-Irrigation Systems</h2>
-                <h3>Basic Drip System, Smart Yard System, and Rain Harvest Integration</h3>
-                <button>Learn More</button>
-            </article>
-
-            <article>
-                <h2>Seasonal Clean-Up & Care</h2>
-                <h3>Spring Prep, Fall Ready, and Storm Recovery</h3>
-                <button>Learn More</button>
-            </article>
-
-            <article>
-                <h2>Specialty Add-Ons</h2>
-                <h3>Patio Planters, Decorative Pots, Pollinator Garden Installation, and Low-Voltage Garden Lighting</h3>
-                <button>Learn More</button>
-            </article>
-        </section>
-
-        <section class="services__prices">
-
-            <!-- Garden Design Packages -->
-            <h1>Garden Design Packages</h1>
-            <div class="package">
-                <h3>Sprout Plan</h3>
-                <p>On-site consultation, basic layout plan (front or back yard), plant selection guide (native & low-water species).</p>
-                <h3>$250</h3>
-            </div>
-
-            <div class="package">
-                <h3>Growth Plan</h3>
-                <p>Full-yard design (front & back), custom planting plan, soil and irrigation recommendations, 3D concept images.</p>
-                <h3>$750</h3>
-            </div>
-
-            <div class="package">
-                <h3>Bloom Plan</h3>
-                <p>Full-yard design, sourcing & coordinating plant delivery, design adjustments post-installation, one follow-up maintenance visit.</p>
-                <h3>$1,200</h3>
-            </div>
-
-            <!-- Lawn Installation & Maintenance -->
-            <h1>Lawn Installation & Maintenance</h1>
-            <div class="package">
-                <h3>Sod Installation</h3>
-                <p>Preparation, soil amendment, sod laying, first watering, starter care instructions.</p>
-                <h3>$2.50–$4.50 per sq. ft.</h3>
-            </div>
-
-            <div class="package">
-                <h3>Native Grass Seeding</h3>
-                <p>Eco-conscious seeding blend, soil prep, slow-release fertilizer.</p>
-                <h3>$1,000–$1,500 per yard (typical residential lot)</h3>
-            </div>
-
-            <div class="package">
-                <h3>Monthly Maintenance</h3>
-                <p>Mowing, edging, organic fertilization, weed control.</p>
-                <h3>$150–$250/month</h3>
-            </div>
-
-            <!-- Eco-Irrigation System -->
-            <h1>Eco-Irrigation System</h1>
-            <div class="package">
-                <h3>Basic Drip System</h3>
-                <p>Drip irrigation for gardens, programmable timer.</p>
-                <h3>$850</h3>
-            </div>
-
-            <div class="package">
-                <h3>Smart Yard System</h3>
-                <p>Drip & micro-sprinklers, app-controlled water schedule, rain sensor.</p>
-                <h3>$1,500</h3>
-            </div>
-
-            <div class="package">
-                <h3>Rain Harvest Integration</h3>
-                <p>Smart system plus rainwater catchment barrels and filtration.</p>
-                <h3>$2,200</h3>
-            </div>
-
-            <!-- Seasonal Clean-Up & Care -->
-            <h1>Seasonal Clean-Up & Care</h1>
-            <div class="package">
-                <h3>Spring Prep</h3>
-                <p>Leaf & debris removal, bed prep, pruning, first fertilization.</p>
-                <h3>$200–$450</h3>
-            </div>
-
-            <div class="package">
-                <h3>Fall Ready</h3>
-                <p>Leaf & debris removal, perennial cutbacks, winter fertilizer.</p>
-                <h3>$200–$450</h3>
-            </div>
-
-            <div class="package">
-                <h3>Storm Recovery</h3>
-                <p>Branch & debris clearing, lawn recovery treatments.</p>
-                <h3>Starting at $150</h3>
-            </div>
-
-            <!-- Specialty Add-Ons -->
-            <h1>Specialty Add-Ons</h1>
-            <div class="package">
-                <h3>Patio Planters & Decorative Pots</h3>
-                <p>Selection, planting, placement.</p>
-                <h3>$50–$200 each</h3>
-            </div>
-
-            <div class="package">
-                <h3>Pollinator Garden Installation</h3>
-                <p>Bee & butterfly-friendly plants, signage.</p>
-                <h3>$300–$700</h3>
-            </div>
-
-            <div class="package">
-                <h3>Low-Voltage Garden Lighting</h3>
-                <p>Path & accent lights, timer or solar powered.</p>
-                <h3>$400–$1,000</h3>
-            </div>
-        </section>
-
-        <section class="services__image">
-            <img src="BeforeAndAfter.jpg" alt="Lawn before and after landscaping project">
-        </section>
-
-        <section class="services__discounts">
-            <h1>Discounts & Bundles</h1>
-            <h3><strong>10% off</strong> when booking both design and installation together.</h3>
-            <h2>Loyalty Maintenance Plan</h2>
-            <h3>Book 12 months of maintenance, get <strong>1 month free.</strong></h3>
-        </section>
-
-        <section class="services__estimate">
-            <h1>Free Estimate</h1>
-            <h3>Every new project starts with a free on-site consultation.</h3>
-            <button>Get a Free Quote</button>
-        </section>
-
-    </main>
-
-    <hr>
-    <footer>
-        <div class="footer__info_links">
-            <div class="footer__info">
-                <a href="index.html" class="footer__logo">BrightSprout Landscaping</a>
-                <p class="footer__phone">(555)123-LAND</p>
-                <p class="footer__email">info@brightsprout.com</p>
-                <p class="footer__disclaimer">This site was created as part of the Web Development II course at Northwest Missouri State University and was developed to learn and enhance the concepts within that course. It is not intended for public use.</p>
-            </div>
-
-            <div class="footer__links">
-                <div class="footer__column">
-                    <h3 class="footer__section_name">Services</h3>
-                    <ul class="footer__sublink">
-                        <li><a href="services.html" class="footer__nav_link">Service Packages</a></li>
-                        <li><a href="services.html" class="footer__nav_link">Get A Quote</a></li>
-                        <li><a href="services.html" class="footer__nav_link">Discounts & Bundles</a></li>
-                    </ul>
+                <!--mobile dropdown-->
+                <div id="myLinks">
+                    <a href="services.html" class="nav__link">Services</a>
+                    <a href="gallery.html" class="nav__link">Gallery</a>
+                    <a href="about.html" class="nav__link">About</a>
+                    <a href="blogs.html" class="nav__link">Blogs</a>
+                    <a href="services.html" class="btn btn__quote">Get A Free Quote</a>
                 </div>
 
-                <div class="footer__column">
-                    <h3 class="footer__section_name">Gallery</h3>
-                    <ul class="footer__sublink">
-                        <li><a href="gallery.html" class="footer__nav_link">Photo Gallery</a></li>
-                        <li><a href="gallery.html" class="footer__nav_link">Customer Reviews</a></li>
-                    </ul>
-                </div>
+                <!--hamburger icon-->
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+                    <i class="fas fa-bars"></i>
+                </a>
+            </nav>
+        </header>
 
-                <div class="footer__column">
-                    <h3 class="footer__section_name">About Us</h3>
-                    <ul class="footer__sublink">
-                        <li><a href="about.html" class="footer__nav_link">Company Story</a></li>
-                        <li><a href="about.html" class="footer__nav_link">Our Mission</a></li>
-                        <li><a href="about.html" class="footer__nav_link">Meet Our Team</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__column">
-                    <h3 class="footer__section_name">Blogs</h3>
-                    <ul class="footer__sublink">
-                        <li><a href="blogs.html" class="footer__nav_link">Articles</a></li>
-                        <li><a href="blogs.html" class="footer__nav_link">Tips</a></li>
-                    </ul>
+        <!--Use the main area to add the main content to the webpage-->
+        <main>
+            <div class="services__title">
+                <div class="services__title_cover">
+                    <h2 class="services__title_header">Services</h2>
+                    <p class="services__title_info">
+                        All prices are estimates. Final pricing is based on yard size, material selection, and project
+                        complexity.
+                    </p>
+                    <a href="services.html" class="btn">Get A Free Quote</a>
                 </div>
             </div>
-        </div>
 
-    </footer>
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("myLinks");
-            menu.classList.toggle("show");
-        }
-    </script>
-</body>
+            <div class="services__links">
+                <h2 class="services__links_header">Service Packages & Pricing</h2>
+                <div class="services__links__group">
+                    <article class="services__links_individual">
+                        <h2 class="services__links_group_header">Garden Design Packages</h2>
+                        <h3 class="services__links_info">Sprout Plan, Growth Plan, and Bloom Plan</h3>
+                        <a href="#garden__design" class="btn">Learn More</a>
+                    </article>
+                    <article class="services__links_individual">
+                        <h2 class="services__links_group_header">Lawn Installation & Maintenance</h2>
+                        <h3 class="services__links_info">
+                            Sod Installation, Native Grass Seeding, and Monthly Maintenance
+                        </h3>
+                        <a href="#lawn" class="btn">Learn More</a>
+                    </article>
+                    <article class="services__links_individual">
+                        <h2 class="services__links_group_header">Eco-Irrigation Systems</h2>
+                        <h3 class="services__links_info">
+                            Basic Drip System, Smart Yard System, and Rain Harvest Integration
+                        </h3>
+                        <a href="#eco" class="btn">Learn More</a>
+                    </article>
+                    <article class="services__links_individual">
+                        <h2 class="services__links_group_header">Seasonal Clean-Up & Care</h2>
+                        <h3 class="services__links_info">Spring Prep, Fall Ready, and Storm Recovery</h3>
+                        <a href="#seasonal" class="btn">Learn More</a>
+                    </article>
+                    <article class="services__links_individual">
+                        <h2 class="services__links_group_header">Specialty Add-Ons</h2>
+                        <h3 class="services__links_info">
+                            Patio Planters, Decorative Pots, Pollinator Garden Installation, and Low-Voltage Garden
+                            Lighting
+                        </h3>
+                        <a href="#specialty" class="btn">Learn More</a>
+                    </article>
+                </div>
+            </div>
 
+            <div class="services__prices">
+                <details class="services__group" id="garden__design">
+                    <summary class="services__prices_header">Garden Design Packages</summary>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Sprout Plan</h3>
+                        <p class="services__prices_info">
+                            On-site consultation, basic layout plan (front or back yard), plant selection guide (native
+                            low-water species).
+                        </p>
+                        <p class="services__prices_price">$250</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Growth Plan</h3>
+                        <p class="services__prices_info">
+                            Full-yard design (front & back), custom planting plan, soil and irrigation recommendations,
+                            3D concept images.
+                        </p>
+                        <p class="services__prices_price">$750</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Bloom Plan</h3>
+                        <p class="services__prices_info">
+                            Full-yard design, sourcing & coordinating plant delivery, design adjustments
+                            post-installation, one follow-up maintenance visit.
+                        </p>
+                        <p class="services__prices_price">$1,200</p>
+                    </div>
+                </details>
+
+                <details class="services__group" id="lawn">
+                    <summary class="services__prices_header">Lawn Installation & Maintenance</summary>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Sod Installation</h3>
+                        <p class="services__prices_info">
+                            Preparation, soil amendment, sod laying, first watering, starter care instructions.
+                        </p>
+                        <p class="services__prices_price">$2.50–$4.50 per sq. ft.</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Native Grass Seeding</h3>
+                        <p class="services__prices_info">
+                            Eco-conscious seeding blend, soil prep, slow-release fertilizer.
+                        </p>
+                        <p class="services__prices_price">$1,000–$1,500 per yard (typical residential lot)</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Monthly Maintenance</h3>
+                        <p class="services__prices_info">Mowing, edging, organic fertilization, weed control.</p>
+                        <p class="services__prices_price">$150–$250/month</p>
+                    </div>
+                </details>
+
+                <details class="services__group" id="eco">
+                    <summary class="services__prices_header">Eco-Irrigation System</summary>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Basic Drip System</h3>
+                        <p class="services__prices_info">Drip irrigation for gardens, programmable timer.</p>
+                        <p class="services__prices_price">$850</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Smart Yard System</h3>
+                        <p class="services__prices_info">
+                            Drip & micro-sprinklers, app-controlled water schedule, rain sensor.
+                        </p>
+                        <p class="services__prices_price">$1,500</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Rain Harvest Integration</h3>
+                        <p class="services__prices_info">
+                            Smart system plus rainwater catchment barrels and filtration.
+                        </p>
+                        <p class="services__prices_price">$2,200</p>
+                    </div>
+                </details>
+
+                <details class="services__group" id="seasonal">
+                    <summary class="services__prices_header">Seasonal Clean-Up & Care</summary>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Spring Prep</h3>
+                        <p class="services__prices_info">
+                            Leaf & debris removal, bed prep, pruning, first fertilization.
+                        </p>
+                        <p class="services__prices_price">$200–$450</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Fall Ready</h3>
+                        <p class="services__prices_info">
+                            Leaf & debris removal, perennial cutbacks, winter fertilizer.
+                        </p>
+                        <p class="services__prices_price">$200–$450</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Storm Recovery</h3>
+                        <p class="services__prices_info">Branch & debris clearing, lawn recovery treatments.</p>
+                        <p class="services__prices_price">Starting at $150</p>
+                    </div>
+                </details>
+
+                <details class="services__group" id="specialty">
+                    <summary class="services__prices_header">Specialty Add-Ons</summary>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Patio Planters & Decorative Pots</h3>
+                        <p class="services__prices_info">Selection, planting, placement.</p>
+                        <p class="services__prices_price">$50–$200 each</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Pollinator Garden Installation</h3>
+                        <p class="services__prices_info">Bee & butterfly-friendly plants, signage.</p>
+                        <p class="services__prices_price">$300–$700</p>
+                    </div>
+                    <div class="services__package">
+                        <h3 class="services__prices_name">Low-Voltage Garden Lighting</h3>
+                        <p class="services__prices_info">Path & accent lights, timer or solar powered.</p>
+                        <p class="services__prices_price">$400–$1,000</p>
+                    </div>
+                </details>
+            </div>
+
+            <img
+                src="images/BeforeAndAfter.jpg"
+                alt="Lawn before and after landscaping project"
+                class="services__image" />
+
+            <section class="services__discounts">
+                <h2 class="services__discounts_header">Discounts & Bundles</h2>
+                <p class="services__discounts_info">
+                    <strong>10% off</strong> when booking both design and installation together.
+                </p>
+                <h2 class="services__discounts_header">Loyalty Maintenance Plan</h2>
+                <p class="services__discounts_info">
+                    Book 12 months of maintenance, get <strong>1 month free.</strong>
+                </p>
+            </section>
+
+            <section class="services__estimate">
+                <h4 class="services__estimate_header">Free Estimate</h4>
+                <p class="services__estimate_info">Every new project starts with a free on-site consultation.</p>
+                <a href="services.html" class="btn">Get A Free Quote</a>
+            </section>
+        </main>
+
+        <hr />
+        <footer>
+            <div class="footer__info_links">
+                <div class="footer__info">
+                    <a href="index.html" class="footer__logo">BrightSprout Landscaping</a>
+                    <p class="footer__phone">(555)123-LAND</p>
+                    <p class="footer__email">info@brightsprout.com</p>
+                    <p class="footer__disclaimer">
+                        This site was created as part of the Web Development II course at Northwest Missouri State
+                        University and was developed to learn and enhance the concepts within that course. It is not
+                        intended for public use.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__section_name">Services</h3>
+                        <ul class="footer__sublink">
+                            <li><a href="services.html" class="footer__nav_link">Service Packages</a></li>
+                            <li><a href="services.html" class="footer__nav_link">Get A Quote</a></li>
+                            <li><a href="services.html" class="footer__nav_link">Discounts & Bundles</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__section_name">Gallery</h3>
+                        <ul class="footer__sublink">
+                            <li><a href="gallery.html" class="footer__nav_link">Photo Gallery</a></li>
+                            <li><a href="gallery.html" class="footer__nav_link">Customer Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__section_name">About Us</h3>
+                        <ul class="footer__sublink">
+                            <li><a href="about.html" class="footer__nav_link">Company Story</a></li>
+                            <li><a href="about.html" class="footer__nav_link">Our Mission</a></li>
+                            <li><a href="about.html" class="footer__nav_link">Meet Our Team</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__section_name">Blogs</h3>
+                        <ul class="footer__sublink">
+                            <li><a href="blogs.html" class="footer__nav_link">Articles</a></li>
+                            <li><a href="blogs.html" class="footer__nav_link">Tips</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("myLinks");
+                menu.classList.toggle("show");
+            }
+
+            const learnMoreButtons = document.querySelectorAll(".services__links_individual .btn");
+            learnMoreButtons.forEach((button) => {
+                button.addEventListener("click", function (e) {
+                    e.preventDefault();
+
+                    const targetId = this.getAttribute("href").substring(1);
+                    const details = document.getElementById(targetId);
+
+                    if (details) {
+                        details.open = true;
+                        details.scrollIntoView({ behavior: "smooth" });
+                    }
+                });
+            });
+        </script>
+    </body>
 </html>

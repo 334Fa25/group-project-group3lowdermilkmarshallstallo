@@ -3,46 +3,57 @@
  * File Name: servicesStyles.css
 */
 
-/*  Services Page Styles  */
-
 /* Overall page layout */
 main {
     display: flex;
     flex-direction: column;
     gap: 4rem;
+    scroll-behavior: smooth;
 }
 
 /*  SERVICES TITLE SECTION */
 .services__title {
+    background-image: url("../images/patio.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 25rem;
+    position: relative;
+    align-content: center;
     text-align: center;
     margin-top: 2rem;
 }
 
-.services__title h1 {
+.services__title_cover {
+    background-color: rgb(255, 255, 255, 0.9);
+    width: 80%;
+    justify-self: center;
+    padding: 1rem;
+    text-align: center;
+}
+
+.services__title_header {
     font-size: 2.5rem;
     margin-bottom: 1rem;
 }
 
-.services__title h3 {
+.services__title_info {
     font-weight: 400;
-    color: #454545;
     margin-bottom: 2rem;
 }
 
-.services__title .button button {
-    background-color: #579F55;
-    color: white;
-    font-size: 1rem;
-    padding: 1rem 2rem;
-    border-radius: 0.25rem;
-    border: none;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
+/*Service Titles Stylings for Desktop*/
+@media (min-width: 1024px) {
+    .services__title {
+        height: 50rem;
+    }
 
-.services__title .button button:hover {
-    background-color: #4a8b49;
-    transform: translateY(-3px);
+    .services__title_cover {
+        width: 90%;
+        margin-bottom: 30rem;
+        align-items: center;
+    }
 }
 
 /*  IMAGE SECTIONS  */
@@ -50,64 +61,75 @@ main {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.services__image img {
     width: 100%;
-    max-width: 1000px;
     border-radius: 0.5rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.1);
 }
 
 /*  SERVICE LINKS SECTION  */
 .services__links {
-    text-align: center;
+    display: none;
 }
 
-.services__links h1 {
-    font-size: 2rem;
-    margin-bottom: 2rem;
-}
+/*Service Links Style Rules for Desktop*/
+@media (min-width: 1024px) {
+    .services__links {
+        text-align: center;
+        display: block;
+    }
 
-.services__links article {
-    background-color: #f8f8f8;
-    border-radius: 0.5rem;
-    padding: 2rem;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
+    .services__links_header {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        text-align: left;
+    }
 
-.services__links article:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
-}
+    .services__links_individual {
+        background-color: #f8f8f8;
+        border-radius: 0.5rem;
+        padding: 2rem;
+        margin-bottom: 2rem;
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+        transition:
+            transform 0.3s ease,
+            box-shadow 0.3s ease;
+    }
 
-.services__links h2 {
-    font-size: 1.5rem;
-    margin-bottom: 0.5rem;
-}
+    .services__links_group_header {
+        font-size: 1.5rem;
+        margin-bottom: 0.5rem;
+    }
 
-.services__links h3 {
-    font-weight: 400;
-    color: #555;
-    margin-bottom: 1.5rem;
-}
+    .services__links_info {
+        font-weight: 400;
+        color: #555;
+        margin-bottom: 1.5rem;
+    }
+    
+    .services__links__group {
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 1rem;
+        scroll-behavior: smooth;
+        scroll-padding-left: 1rem;
+    }
 
-.services__links button {
-    background-color: #579F55;
-    color: white;
-    border: none;
-    padding: 0.75rem 1.75rem;
-    font-size: 1rem;
-    border-radius: 0.25rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
-}
+    .services__links_individual {
+        flex: 0 0 18.75rem;
+        max-width: 18.75rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.08);
+        gap: 1rem;
+    }
 
-.services__links button:hover {
-    background-color: #4a8b49;
-    transform: translateY(-3px);
+    .services__links_individual .btn {
+        margin-top: auto;
+    }
 }
 
 /*  SERVICE PRICING SECTION  */
@@ -119,167 +141,112 @@ main {
     background-color: #f8f8f8;
 }
 
-/* SECTION TITLES */
-.services__prices h1 {
-    font-size: 2rem;
-    color: #2f2f2f;
+.services__prices_header {
     text-align: center;
     margin-bottom: 2rem;
-    border-bottom: 3px solid #579F55;
+    border-bottom: 0.188rem solid #579f55;
     display: inline-block;
     padding-bottom: 0.5rem;
 }
 
-/* PACKAGE CARDS */
-.package {
+.services__package {
     background-color: #ffffff;
     border-radius: 0.75rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.08);
     padding: 2rem;
     margin: 1rem auto;
-    max-width: 800px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    max-width: 50rem;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
-.package:hover {
+.services__package:hover {
     transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 0.375rem 1rem rgba(0, 0, 0, 0.15);
 }
 
-/* PACKAGE HEADERS */
-.package h3:first-of-type {
-    font-size: 1.4rem;
-    font-weight: 600;
-    color: #2f2f2f;
+.services__prices_name {
     margin-bottom: 0.75rem;
 }
 
-/* PACKAGE DESCRIPTIONS */
-.package p {
+.services__prices_info {
     font-size: 1rem;
     color: #555;
     line-height: 1.6;
     margin-bottom: 1rem;
 }
 
-/* PACKAGE PRICE */
-.package h3:last-of-type {
-    font-size: 1.2rem;
+.services__prices_price {
     font-weight: 600;
-    color: #579F55;
+    color: #579f55;
     margin-top: 1rem;
 }
 
-/* ADD SOME VISUAL SEPARATION BETWEEN SERVICE GROUPS */
-.services__prices h1:not(:first-of-type) {
-    margin-top: 4rem;
+summary.services__prices_header {
+    text-align: center;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #579f55;
+    display: inline-block;
+    padding-bottom: 0.5rem;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+summary::after {
+    content: "▾";
+    font-size: 2rem;
+    transition: transform 0.3s ease;
+    margin-left: 1rem;
+    display: inline-block;
+}
+
+details[open] summary.services__prices_header::after {
+    transform: rotate(180deg);
 }
 
 /*  DISCOUNTS & BUNDLES SECTION */
-
-.services__discounts,
-.services__estimate {
-    background-color: #ffffff;
-    border-radius: 0.75rem;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
-    padding: 2.5rem 3rem;
-    max-width: 800px;
-    margin: 2rem auto;
+.services__discounts {
+    background-color: #f8f9f6;
+    padding: 2rem;
     text-align: center;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 0.75rem;
 }
 
-.services__discounts:hover,
-.services__estimate:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15);
-}
-
-/* SECTION TITLES */
-.services__discounts h1,
-.services__estimate h1 {
+.services__discounts_header {
     font-size: 2rem;
-    color: #2f2f2f;
-    margin-bottom: 1.5rem;
-    border-bottom: 3px solid #579F55;
-    display: inline-block;
-    padding-bottom: 0.5rem;
-}
-
-/* SUBHEADINGS & INFO TEXT */
-.services__discounts h2,
-.services__discounts h3,
-.services__estimate h3 {
-    color: #555;
-    font-weight: 400;
-    line-height: 1.6;
     margin-bottom: 1rem;
 }
 
-.services__discounts h2 {
-    font-size: 1.5rem;
-    margin-top: 1.5rem;
-    color: #2f2f2f;
+.services__discounts_info:first-of-type {
+    margin-bottom: 1rem;
 }
 
-/* BUTTONS */
-.services__estimate button {
-    background-color: #579F55;
-    color: #fff;
-    border: none;
-    border-radius: 4px;
-    padding: 0.75rem 1.5rem;
-    font-size: 1rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease, transform 0.2s ease;
+.services__estimate {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 1.875rem 1.25rem;
+    margin-bottom: 4.188rem;
 }
 
-.services__estimate button:hover {
-    background-color: #4b8c48;
-    transform: translateY(-3px);
+.services__estimate_header {
+    margin-bottom: 1rem;
 }
 
-/* RESPONSIVE DESIGN */
-@media (max-width: 768px) {
-    .services__discounts,
+/* Services Estimates Style Rules for Desktop */
+@media (min-width: 1024px) {
     .services__estimate {
-        padding: 2rem;
-        margin: 1.5rem auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem 5rem;
+        margin-bottom: 4.188rem;
     }
 
-    .services__discounts h1,
-    .services__estimate h1 {
-        font-size: 1.75rem;
-    }
-
-    .services__discounts h2,
-    .services__discounts h3,
-    .services__estimate h3 {
-        font-size: 1rem;
-    }
-
-    .services__estimate button {
-        padding: 0.6rem 1.25rem;
-        font-size: 0.95rem;
-    }
-}
-
-@media (max-width: 768px) {
-    .services__prices {
-        padding: 2rem;
-        gap: 2rem;
-    }
-
-    .package {
-        padding: 1.5rem;
-        max-width: 100%;
-    }
-
-    .services__prices h1 {
-        font-size: 1.75rem;
-    }
-
-    .package h3:first-of-type {
-        font-size: 1.25rem;
+    .services__estimate_header {
+        margin-bottom: 0;
     }
 }
