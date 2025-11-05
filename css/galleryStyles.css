@@ -3,9 +3,26 @@
  * File Name: galleryStyles.css
 */
 
+/*Gallery Row Style Rules*/
+.gallery__photos_row {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding: 1rem 0;
+}
+
+.gallery__photos_row_image {
+    flex: 0 0 auto;           
+    width: 80%;               
+    max-width: 320px;
+    border-radius: 10px;
+    scroll-snap-align: center;
+    object-fit: cover;
+}
+
+/*Gallery Row Style Rules for Desktop*/
 @media (min-width: 1024px) {
     .gallery__header {
-        font-size: 48px;
         margin-bottom: 4.438rem;
     }
 
@@ -22,7 +39,53 @@
     }
 
     .gallery__review_first {
-        font-size: 40px;
         margin-top: 4rem;
+    }
+}
+
+/*Gallery Review Style Rules*/
+.gallery__review{
+  margin-block: 2rem;
+  text-align: center;
+  background-color: #f8f9f6;
+  padding: 1rem;
+}
+
+.gallery_review_name_date{
+  margin-top: 1rem;
+  color: #828282;
+}
+
+.star {
+  color: gold;
+  font-size: 2rem;
+}
+
+/*Services Style Rules*/
+.gallery__services {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+    padding: 1.875rem 1.25rem;
+    margin-block: 1rem;
+}
+
+.gallery__services_header {
+    margin-bottom: 1rem;
+}
+
+/* Services Style Rules for Desktop */
+@media (min-width: 1024px) {
+    .gallery__services {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2.5rem 5rem;
+        margin-bottom: 4.188rem;
+    }
+
+    .gallery__services_header {
+        margin-bottom: 0;
     }
 }
