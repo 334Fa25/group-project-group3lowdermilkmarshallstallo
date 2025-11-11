@@ -179,14 +179,14 @@ main {
 
 .services__prices_price {
     font-weight: 600;
-    color: #579f55;
+    color: #27592D;
     margin-top: 1rem;
 }
 
 summary.services__prices_header {
     text-align: center;
     margin-bottom: 2rem;
-    border-bottom: 3px solid #579f55;
+    border-bottom: 3px solid #27592D;
     display: inline-block;
     padding-bottom: 0.5rem;
     font-size: 2rem;
