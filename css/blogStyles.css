@@ -73,14 +73,14 @@
     text-decoration: none;
     color: #27592D;
     font-weight: 600;
-    border: 2px solid #579f55;
+    border: 2px solid #27592D;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: all 0.3s ease;
 }
 
 .blog__item_link:hover {
-    background-color: #579f55;
+    background-color: #27592D;
     color: #fff;
 }
 
