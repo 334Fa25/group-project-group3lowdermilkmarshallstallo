@@ -212,7 +212,7 @@
     display: none;
 }
 
-@media (min-width: 1302px) {
+@media (min-width: 1024px) {
     .index__reviews {
         display: block;
         margin-top: 13.5rem;
