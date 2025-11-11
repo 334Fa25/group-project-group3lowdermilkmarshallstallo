@@ -32,7 +32,7 @@
 }
 
 .blog_item_header {
-    color: #27592D;
+    color: #579f55;
     margin-bottom: 0.5rem;
 }
 
@@ -71,9 +71,9 @@
 
 .blog__item_link {
     text-decoration: none;
-    color: #579f55;
+    color: #27592D;
     font-weight: 600;
-    border: 2px solid #579f55;
+    border: 2px solid #27592D;
     padding: 0.5rem 1rem;
     border-radius: 8px;
     transition: all 0.3s ease;
@@ -101,7 +101,7 @@
 }
 
 .blog__tricks_header {
-    color: #27592D;
+    color: #579f55;
     margin-bottom: 0.5rem;
 }
 
