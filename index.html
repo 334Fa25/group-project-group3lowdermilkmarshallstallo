@@ -1,186 +1,239 @@
-<!DOCTYPE html>
+<!doctype html>
 <!--Names: Kaleb Lowdermilk, Julianna Marshall, Brittany Stallo-->
 <!--File Name: template.html-->
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="description"
+            content="BrightSprout Landscaping provides eco-friendly lawn care, garden design, irrigation systems, and yard clean-up services in Northwest Missouri. Transform your outdoor space with sustainable, local landscaping experts." />
+        <meta
+            name="keywords"
+            content="landscaping, lawn care, garden design, irrigation systems, yard clean up, Missouri landscaping, sustainable landscaping, eco-friendly lawn care, BrightSprout Landscaping" />
+        <meta name="author" content="BrightSprout Landscaping Team" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>BrightSprout Landscaping</title>
+        <link rel="stylesheet" href="css/styles.css" />
+        <link rel="stylesheet" href="css/indexStyles.css" />
+        <link href="https://fonts.googleapis.com/css?family=Inter" rel="stylesheet" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>BrightSprout Landscaping</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/indexStyles.css">
-    <link href='https://fonts.googleapis.com/css?family=Inter' rel='stylesheet'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
-</head>
+    <body>
+        <header>
+            <a href="index.html" class="header__logo">BrightSprout Landscaping</a>
+            <nav class="topnav">
+                <!--desktop navigation-->
+                <ul class="nav__list">
+                    <li><a href="services.html" class="nav__link">Services</a></li>
+                    <li><a href="gallery.html" class="nav__link">Gallery</a></li>
+                    <li><a href="about.html" class="nav__link">About</a></li>
+                    <li><a href="blogs.html" class="nav__link">Blogs</a></li>
+                    <li><a href="services.html#free_quote" class="btn btn__quote">Get A Free Quote</a></li>
+                </ul>
 
-<body>
-    <header>
-        <a href="index.html" class="header__logo">BrightSprout Landscaping</a>
-        <nav class="topnav">
-            <!--desktop navigation-->
-            <ul class="nav__list">
-                <li><a href="services.html" class="nav__link">Services</a></li>
-                <li><a href="gallery.html" class="nav__link">Gallery</a></li>
-                <li><a href="about.html" class="nav__link">About</a></li>
-                <li><a href="blogs.html" class="nav__link">Blogs</a></li>
-                <li><a href="services.html#free_quote" class=" btn btn__quote">Get A Free Quote</a></li>
-            </ul>
-
-            <!--mobile dropdown-->
-            <div id="myLinks">
-                <a href="services.html" class="nav__link">Services</a>
-                <a href="gallery.html" class="nav__link">Gallery</a>
-                <a href="about.html" class="nav__link">About</a>
-                <a href="blogs.html" class="nav__link">Blogs</a>
-                <a href="services.html#free_quote" class="btn">Get A Free Quote</a>
-            </div>
-
-            <!--hamburger icon-->
-            <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" aria-label="Toggle menu">
-                <em class="fas fa-bars"></em>
-            </a>
-        </nav>
-    </header>
-
-
-    <!--Use the main area to add the main content to the webpage-->
-    <main>
-        <div class="index__hero">
-            <div class="index__hero_cover">
-                <h1 class="index__hero_header">Transform Your Outdoor Space</h1>
-                <p class="index__hero_info">Serving Northwest Missouri with personalized lawn care and landscaping services.</p>
-                <a href="services.html#free_quote" class="btn">Get A Free Quote</a>
-            </div>
-        </div>
-        <div class="index__about">
-            <h2 class="index__about_header">About BrightSprout Landscaping</h2>
-            <h4 class="index__about_quote">"Growing beauty, one yard at a time."</h4>
-            <p class="index__about_info">BrightSprout Landscaping is a local, eco-friendly landscaping company that designs, installs, and maintains outdoor spaces for homes and small businesses. We focus on sustainable plants, water-conscious irrigation, and creative garden design.</p>
-            <a href="about.html" class="btn">Learn More About Us!</a>
-        </div>
-        <div class="index__offer">
-            <h4 class="index__offer_header">What We Offer</h4>
-            <div class="index__offer_carousel">
-                <div class="index__offer_card">
-                    <img src="images/backyard.jpg" alt="Backyard with patchy grass and overgrown shrubs." class="index__offer_card_image">
-                    <p class="index__offer_card_header">Garden Design</p>
-                    <p class="index__offer_card_info">Thoughtful layout plans with native, low-water plants for long-term beauty.</p>
+                <!--mobile dropdown-->
+                <div id="myLinks">
+                    <a href="services.html" class="nav__link">Services</a>
+                    <a href="gallery.html" class="nav__link">Gallery</a>
+                    <a href="about.html" class="nav__link">About</a>
+                    <a href="blogs.html" class="nav__link">Blogs</a>
+                    <a href="services.html#free_quote" class="btn">Get A Free Quote</a>
                 </div>
-                <div class="index__offer_card">
-                    <img src="images/house2.jpg" alt="Suburban home with simple, clean landscaping." class="index__offer_card_image">
-                    <p class="index__offer_card_header">Lawn Installation & Maintenance</p>
-                    <p class="index__offer_card_info">Eco-conscious turf with organic treatments and ongoing care plans.</p>
-                </div>
-                <div class="index__offer_card">
-                    <img src="images/house3Before.jpg" alt="New brick home with a bare dirt front yard." class="index__offer_card_image">
-                    <p class="index__offer_card_header">Eco-Irrigation Systems</p>
-                    <p class="index__offer_card_info">Smart drip systems and rainwater harvesting to drastically reduce water usage.</p>
-                </div>
-                <div class="index__offer_card">
-                    <img src="images/redDoorHouseAfter.png" alt="White house with a red door and surrounding fall foliage." class="index__offer_card_image">
-                    <p class="index__offer_card_header">Seasonal Clean-Up</p>
-                    <p class="index__offer_card_info">Full-service yard preparation and cleanup to streamline seasonal transitions.</p>
+
+                <!--hamburger icon-->
+                <a href="javascript:void(0);" class="icon" onclick="toggleMenu()" aria-label="Toggle menu">
+                    <em class="fas fa-bars"></em>
+                </a>
+            </nav>
+        </header>
+
+        <!--Use the main area to add the main content to the webpage-->
+        <main>
+            <div class="index__hero">
+                <div class="index__hero_cover">
+                    <h1 class="index__hero_header">Transform Your Outdoor Space</h1>
+                    <p class="index__hero_info">
+                        Serving Northwest Missouri with personalized lawn care and landscaping services.
+                    </p>
+                    <a href="services.html#free_quote" class="btn">Get A Free Quote</a>
                 </div>
             </div>
-            <a href="services.html#free_quote" class="btn offer_btn">Get A Free Quote Today!</a>
-        </div>
-        <div class="index__choose">
-            <div class="index__choose_content">
-                <h4 class="index__choose_header">Why Choose Us?</h4>
-                <div class="index__choose_reasons">
-                    <div class="index__choose_reasons_individual">
-                        <p class="index__choose_reasons_header">We Keep It Local</p>
-                        <p class="index__choose_reasons_info">Locally-focused designs that suit Missouri's climate and soil.</p>
+            <div class="index__about">
+                <h2 class="index__about_header">About BrightSprout Landscaping</h2>
+                <h4 class="index__about_quote">"Growing beauty, one yard at a time."</h4>
+                <p class="index__about_info">
+                    BrightSprout Landscaping is a local, eco-friendly landscaping company that designs, installs, and
+                    maintains outdoor spaces for homes and small businesses. We focus on sustainable plants,
+                    water-conscious irrigation, and creative garden design.
+                </p>
+                <a href="about.html" class="btn">Learn More About Us!</a>
+            </div>
+            <div class="index__offer">
+                <h4 class="index__offer_header">What We Offer</h4>
+                <div class="index__offer_carousel">
+                    <div class="index__offer_card">
+                        <img
+                            src="images/backyard.jpg"
+                            alt="Backyard with patchy grass and overgrown shrubs."
+                            class="index__offer_card_image" />
+                        <p class="index__offer_card_header">Garden Design</p>
+                        <p class="index__offer_card_info">
+                            Thoughtful layout plans with native, low-water plants for long-term beauty.
+                        </p>
                     </div>
-                    <div class="index__choose_reasons_individual">
-                        <p class="index__choose_reasons_header">Top-notch Experience</p>
-                        <p class="index__choose_reasons_info">Expert care from a team passionate about plants, beauty, and sustainability.</p>
+                    <div class="index__offer_card">
+                        <img
+                            src="images/house2.jpg"
+                            alt="Suburban home with simple, clean landscaping."
+                            class="index__offer_card_image" />
+                        <p class="index__offer_card_header">Lawn Installation & Maintenance</p>
+                        <p class="index__offer_card_info">
+                            Eco-conscious turf with organic treatments and ongoing care plans.
+                        </p>
                     </div>
-                    <div class="index__choose_reasons_individual">
-                        <p class="index__choose_reasons_header">Pretty But Sustainable</p>
-                        <p class="index__choose_reasons_info">Innovative solutions that balance aesthetics with environmental responsibility.</p>
+                    <div class="index__offer_card">
+                        <img
+                            src="images/house3Before.jpg"
+                            alt="New brick home with a bare dirt front yard."
+                            class="index__offer_card_image" />
+                        <p class="index__offer_card_header">Eco-Irrigation Systems</p>
+                        <p class="index__offer_card_info">
+                            Smart drip systems and rainwater harvesting to drastically reduce water usage.
+                        </p>
+                    </div>
+                    <div class="index__offer_card">
+                        <img
+                            src="images/redDoorHouseAfter.png"
+                            alt="White house with a red door and surrounding fall foliage."
+                            class="index__offer_card_image" />
+                        <p class="index__offer_card_header">Seasonal Clean-Up</p>
+                        <p class="index__offer_card_info">
+                            Full-service yard preparation and cleanup to streamline seasonal transitions.
+                        </p>
                     </div>
                 </div>
-                <a href="services.html#free_quote" class="btn index__choose_btn">Get A Free Quote Today!</a>
+                <a href="services.html#free_quote" class="btn offer_btn">Get A Free Quote Today!</a>
             </div>
-            <img src="images/patio.jpg" alt="Modern backyard patio with pavers and outdoor seating." class="index__choose_image">
-        </div>
-        <div class="index__reviews">
-            <h4 class="index__reviews_header">Take a look at some of our reviews!</h4>
-            <div class="index__reviews_group">
-                <div class="index__reviews_individual">
-                    <p class="index__reviews_group_header">"BrightSprout gave our front yard a whole new look..."</p>
-                    <p class="index__reviews_group_name">Laura P</p>
-                    <p class="index__reviews_group_date">October 2025</p>
+            <div class="index__choose">
+                <div class="index__choose_content">
+                    <h4 class="index__choose_header">Why Choose Us?</h4>
+                    <div class="index__choose_reasons">
+                        <div class="index__choose_reasons_individual">
+                            <p class="index__choose_reasons_header">We Keep It Local</p>
+                            <p class="index__choose_reasons_info">
+                                Locally-focused designs that suit Missouri's climate and soil.
+                            </p>
+                        </div>
+                        <div class="index__choose_reasons_individual">
+                            <p class="index__choose_reasons_header">Top-notch Experience</p>
+                            <p class="index__choose_reasons_info">
+                                Expert care from a team passionate about plants, beauty, and sustainability.
+                            </p>
+                        </div>
+                        <div class="index__choose_reasons_individual">
+                            <p class="index__choose_reasons_header">Pretty But Sustainable</p>
+                            <p class="index__choose_reasons_info">
+                                Innovative solutions that balance aesthetics with environmental responsibility.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="services.html#free_quote" class="btn index__choose_btn">Get A Free Quote Today!</a>
                 </div>
-                <div class="index__reviews_individual">
-                    <p class="index__reviews_group_header">"Carlos set up a drip irrigation system for us, and it's been awesome."</p>
-                    <p class="index__reviews_group_name">Derek & Monique H.</p>
-                    <p class="index__reviews_group_date">September 2025</p>
+                <img
+                    src="images/patio.jpg"
+                    alt="Modern backyard patio with pavers and outdoor seating."
+                    class="index__choose_image" />
+            </div>
+            <div class="index__reviews">
+                <h4 class="index__reviews_header">Take a look at some of our reviews!</h4>
+                <div class="index__reviews_group">
+                    <div class="index__reviews_individual">
+                        <p class="index__reviews_group_header">
+                            "BrightSprout gave our front yard a whole new look..."
+                        </p>
+                        <p class="index__reviews_group_name">Laura P</p>
+                        <p class="index__reviews_group_date">October 2025</p>
+                    </div>
+                    <div class="index__reviews_individual">
+                        <p class="index__reviews_group_header">
+                            "Carlos set up a drip irrigation system for us, and it's been awesome."
+                        </p>
+                        <p class="index__reviews_group_name">Derek & Monique H.</p>
+                        <p class="index__reviews_group_date">September 2025</p>
+                    </div>
+                    <div class="index__reviews_individual">
+                        <p class="index__reviews_group_header">
+                            "We had BrightSprout redo our backyard lawn, and it's holding up really well."
+                        </p>
+                        <p class="index__reviews_group_name">Evelyn R.</p>
+                        <p class="index__reviews_group_date">September 2025</p>
+                    </div>
                 </div>
-                <div class="index__reviews_individual">
-                    <p class="index__reviews_group_header">"We had BrightSprout redo our backyard lawn, and it's holding up really well."</p>
-                    <p class="index__reviews_group_name">Evelyn R.</p>
-                    <p class="index__reviews_group_date">September 2025</p>
+                <a href="gallery.html" class="btn reviews__btn">More Reviews</a>
+            </div>
+        </main>
+
+        <hr />
+        <footer>
+            <div class="footer__info_links">
+                <div class="footer__info">
+                    <a href="index.html" class="footer__logo">BrightSprout Landscaping</a>
+                    <p class="footer__phone">(555)123-LAND</p>
+                    <p class="footer__email">info@brightsprout.com</p>
+                    <p class="footer__disclaimer">
+                        This site was created as part of the Web Development II course at Northwest Missouri State
+                        University and was developed to learn and enhance the concepts within that course. It is not
+                        intended for public use.
+                    </p>
+                </div>
+
+                <div class="footer__links">
+                    <div class="footer__column">
+                        <h3 class="footer__section_name">Services</h3>
+                        <ul class="footer__sublink">
+                            <li><a href="services.html#packages" class="footer__nav_link">Service Packages</a></li>
+                            <li><a href="services.html#free_quote" class="footer__nav_link">Get A Quote</a></li>
+                            <li><a href="services.html#discounts" class="footer__nav_link">Discounts & Bundles</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__section_name">Gallery</h3>
+                        <ul class="footer__sublink">
+                            <li><a href="gallery.html#photo" class="footer__nav_link">Photo Gallery</a></li>
+                            <li><a href="gallery.html#reviews" class="footer__nav_link">Customer Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__section_name">About Us</h3>
+                        <ul class="footer__sublink">
+                            <li><a href="about.html#company_story" class="footer__nav_link">Company Story</a></li>
+                            <li><a href="about.html#our_mission" class="footer__nav_link">Our Mission</a></li>
+                            <li><a href="about.html#our_team" class="footer__nav_link">Meet Our Team</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer__column">
+                        <h3 class="footer__section_name">Blogs</h3>
+                        <ul class="footer__sublink">
+                            <li><a href="blogs.html#articles" class="footer__nav_link">Articles</a></li>
+                            <li><a href="blogs.html#tips" class="footer__nav_link">Tips</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <a href="gallery.html" class="btn reviews__btn">More Reviews</a>
-        </div>
-    </main>
-
-    <hr>
-    <footer>
-        <div class="footer__info_links">
-            <div class="footer__info">
-                <a href="index.html" class="footer__logo">BrightSprout Landscaping</a>
-                <p class="footer__phone">(555)123-LAND</p>
-                <p class="footer__email">info@brightsprout.com</p>
-                <p class="footer__disclaimer">This site was created as part of the Web Development II course at Northwest Missouri State University and was developed to learn and enhance the concepts within that course. It is not intended for public use.</p>
-            </div>
-
-            <div class="footer__links">
-                <div class="footer__column">
-                    <h3 class="footer__section_name">Services</h3>
-                    <ul class="footer__sublink">
-                        <li><a href="services.html#packages" class="footer__nav_link">Service Packages</a></li>
-                        <li><a href="services.html#free_quote" class="footer__nav_link">Get A Quote</a></li>
-                        <li><a href="services.html#discounts" class="footer__nav_link">Discounts & Bundles</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__column">
-                    <h3 class="footer__section_name">Gallery</h3>
-                    <ul class="footer__sublink">
-                        <li><a href="gallery.html#photo" class="footer__nav_link">Photo Gallery</a></li>
-                        <li><a href="gallery.html#reviews" class="footer__nav_link">Customer Reviews</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__column">
-                    <h3 class="footer__section_name">About Us</h3>
-                    <ul class="footer__sublink">
-                        <li><a href="about.html#company_story" class="footer__nav_link">Company Story</a></li>
-                        <li><a href="about.html#our_mission" class="footer__nav_link">Our Mission</a></li>
-                        <li><a href="about.html#our_team" class="footer__nav_link">Meet Our Team</a></li>
-                    </ul>
-                </div>
-
-                <div class="footer__column">
-                    <h3 class="footer__section_name">Blogs</h3>
-                    <ul class="footer__sublink">
-                        <li><a href="blogs.html#articles" class="footer__nav_link">Articles</a></li>
-                        <li><a href="blogs.html#tips" class="footer__nav_link">Tips</a></li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </footer>
-    <script>
-        function toggleMenu() {
-            var menu = document.getElementById("myLinks");
-            menu.classList.toggle("show");
-        }
-    </script>
-</body>
-
+        </footer>
+        <script>
+            function toggleMenu() {
+                var menu = document.getElementById("myLinks");
+                menu.classList.toggle("show");
+            }
+        </script>
+    </body>
 </html>
