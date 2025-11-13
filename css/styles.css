@@ -186,9 +186,9 @@ footer {
 
 .footer__disclaimer {
     margin-top: 1rem;
-    font-size: 0.625rem;
     color: #6b6b6b;
     max-width: 25rem;
+    font-size: 16px;
 }
 
 /*Style rules for mobile & tablet view*/
@@ -264,5 +264,6 @@ footer {
 
     .footer__disclaimer {
         text-align: justify;
+        font-size: 16px;
     }
 }
